@@ -1,0 +1,14 @@
+body {
+  margin-top: 70px;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+.grams {
+  background-color: #297FAF;
+}
+.kilograms {
+  background-color: #7F6CAF;
+}
+.ounces {
+  background-color: #B75380;
+}

@@ -1,14 +1,47 @@
 body {
   margin-top: 70px;
-  background-color: #333333;
+  background-color: #171E27;
   color: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .grams {
   background-color: #297FAF;
+  padding: 5px;
 }
 .kilograms {
   background-color: #7F6CAF;
+  padding: 5px;
 }
 .ounces {
   background-color: #B75380;
+  padding: 5px;
+}
+.card-bananas {
+  background-color: #334A52;
+  padding: 5px;
+  height: 130px;
+  border-radius: 4px;
+  position: relative;
+}
+.card-bananas h4 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.banana-gif {
+  height: 130px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+.banana-img {
+  height: 90px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+#bananaOutput {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
 }

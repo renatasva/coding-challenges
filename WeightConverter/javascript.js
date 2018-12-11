@@ -5,4 +5,5 @@ document.getElementById('output').style.visibility = 'hidden';
     document.getElementById('gramsOutput').innerHTML = lbs/0.0022046;
     document.getElementById('kgOutput').innerHTML = lbs/2.2046;
     document.getElementById('ozOutput').innerHTML = lbs*16;
+    document.getElementById('bananaOutput').innerHTML = lbs*3;
   });

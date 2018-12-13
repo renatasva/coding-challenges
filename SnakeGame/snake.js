@@ -11,6 +11,9 @@ ground.src = "img/ground.png";
 const foodImg = new Image();
 foodImg.src = "img/food.png";
 
+const gameoverImg = new Image();
+gameoverImg.src = "img/game-over.png";
+
 // audio
 
 const dead = new Audio();
@@ -26,6 +29,7 @@ up.src = "audio/up.mp3";
 right.src = "audio/right.mp3";
 left.src = "audio/left.mp3";
 down.src = "audio/down.mp3";
+
 
 // snake
 let snake = [];
@@ -82,7 +86,7 @@ function draw() {
   context.drawImage(ground,0,0);
 
   for ( let i = 0; i < snake.length ; i++){
-    context.fillStyle = ( i == 0 ) ? "green" : "white";
+    context.fillStyle = ( i == 0 ) ? "#458645" : "#72C070";
     context.fillRect(snake[i].x, snake[i].y, box, box);
 
     context.strokeStyle = "red";
@@ -94,8 +98,6 @@ function draw() {
   // to get the old head position
   let snakeX = snake[0].x;
   let snakeY = snake[0].y;
-
-  // remove the tail
 
   // which direction
   if (d == "LEFT") snakeX -= box;
@@ -127,32 +129,18 @@ function draw() {
   if (snakeX < box || snakeX > 17 * box || snakeY < 3 * box || snakeY > 17 * box || collision(newHead, snake)){
     clearInterval(game);
     dead.play();
+    context.drawImage(gameoverImg,4 * box, 7 * box);
   }
 
   snake.unshift(newHead);
 
 // score styling
   context.fillStyle = "white";
-  context.font = "45px Arial";
+  context.font = "55px Indie Flower";
   context.fillText(score, 2*box, 1.6*box);
 }
 
 // to call draw function every 100 ms
 
 let game = setInterval(draw,100);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

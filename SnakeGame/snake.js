@@ -65,7 +65,7 @@ function direction(event){
   }
 }
 
-// function to check if there is collision
+// function to check if there is a collision
 
 function collision(head, array){
   for ( let i = 0; i < array.length ; i++){
@@ -96,7 +96,6 @@ function draw() {
   let snakeY = snake[0].y;
 
   // remove the tail
-  snake.pop();
 
   // which direction
   if (d == "LEFT") snakeX -= box;

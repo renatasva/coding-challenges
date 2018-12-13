@@ -136,7 +136,7 @@ function draw() {
 
 // score styling
   context.fillStyle = "white";
-  context.font = "55px Indie Flower";
+  context.font = "45px Patrick Hand";
   context.fillText(score, 2*box, 1.6*box);
 }
 

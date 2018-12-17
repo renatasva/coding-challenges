@@ -23,19 +23,35 @@ body {
   transform: translate(100%, 0);
 }
 .s1 {
-  background: url('slide1.jpg');
+  background: url('slide1.jpeg');
   background-size: 100% 100%;
 }
 .s2 {
-  background: url('slide2.jpg');
+  background: url('slide2.jpeg');
   background-size: 100% 100%;
 }
 .s3 {
-  background: url('slide3.jpg');
+  background: url('slide3.jpeg');
   background-size: 100% 100%;
 }
 .s4 {
-  background: url('slide4.jpg');
+  background: url('slide4.jpeg');
+  background-size: 100% 100%;
+}
+.s5 {
+  background: url('slide5.jpeg');
+  background-size: 100% 100%;
+}
+.s6 {
+  background: url('slide6.jpeg');
+  background-size: 100% 100%;
+}
+.s7 {
+  background: url('slide7.jpeg');
+  background-size: 100% 100%;
+}
+.s8 {
+  background: url('slide8.jpeg');
   background-size: 100% 100%;
 }
 .box {

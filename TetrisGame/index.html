@@ -2,9 +2,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Tetris Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <canvas id="tetris" width="336" height="560"></canvas>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm title">
+        <img src="tetris.png" alt="" width="220px">
+        <h1>Classic Tetris Game</h1>
+        <p>Use arrow keys <i class="fas fa-arrow-left"></i> <i class="fas fa-arrow-down"></i> <i class="fas fa-arrow-right"></i> to move the tetrominoes.</p>
+        <p>Use buttons 'A' and 'S' to rotate the tetrominoes. </p>
+      </div>
+      <div class="col-sm">
+        <canvas id="tetris" width="336" height="560"></canvas>
+      </div>
+      <div class="col-sm score">
+        <p>Score:</p>
+        <div id="score"></div>
+        <p>Lines:</p>
+        <div id="lines"></div>
+      </div>
+    </div>
+  </div>
   <script src="tetris.js"></script>
 </body>
 </html>

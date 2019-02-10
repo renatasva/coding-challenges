@@ -30,6 +30,11 @@ img {
   margin-bottom: 30px;
 }
 
+.created_by {
+  padding-top: 15px;
+  font-size: 9px;
+}
+
 .score {
   margin-top: 120px;
   font-size: 30px;
